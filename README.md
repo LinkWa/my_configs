@@ -1,2 +1,7 @@
-# my_configs
-Mes différentes configurations
+# Mes différentes configurations
+
+## NeoVim
+
+init.vim
+
+
