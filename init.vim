@@ -6,12 +6,15 @@
 :set softtabstop=4
 :set mouse=a
 
+syntax on
+
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/ap/vim-css-color'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
+Plug 'https://github.com/luochen1990/rainbow'
 Plug 'https://github.com/neoclide/coc.nvim'
 
 call plug#end()
@@ -21,6 +24,8 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 :colorscheme gruvbox
 
 let g:coc_disable_startup_warning = 1 "Supprime le message d'alerte d'update de Neovim
+let g:rainbow_active = 1 "Active les parenthèses colorées (0 pour désactiver)
+
 
 autocmd FileType scss setl iskeyword+=@-@ "Autocompletion pour les fichiers .scss
 
